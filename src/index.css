@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FDF4E6;
+    font-family: 'Poppins', sans-serif;
+    color: #624D00;
+}
+
+.autoWidth{
+    width: 1024px;
+}
+
+.container{
+    width: 1024px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .map{
+        height: 250px;
+    }
+    .contact span{
+        padding: 2px 10px;
+    }
+    .contact{
+        margin-right: 14px;
+    }
+    .grid-menu{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .map{
+        height: 250px;
+    }
+}
